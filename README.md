@@ -1,4 +1,4 @@
-# Weather Proxy API
+## Weather Proxy API
 
 A FastAPI-based  proxy that fetches weather data from an external server (`wttr.in`) and caches results with custom cache time to minimize calls.
 
@@ -31,7 +31,7 @@ Weather data for a city, with optional caching control.
 
 "city" string is required, rest are optional - "disable_cache" is false by default and "ttl" is 3600.
 
-##### Design / Architecture choices
+## Design / Architecture choices
 
 The project itself doesn't have a complex "architecture" to say so, it has two main components - caching mechanism and app in general. 
 - For app I chose FastAPI because it doesn't have a lot of overhead and keeps the app itself lightweight, also because of the general features of the framework. 
@@ -40,7 +40,7 @@ The project itself doesn't have a complex "architecture" to say so, it has two m
 
 Project file structure follows clean and convenient pattern to make adding of the new code easy. 
 
-###### Launching app and tests
+## Launching app and tests
 
 Local (venv) run from the core project folder (weather_service_proxy): 
 ```
